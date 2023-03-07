@@ -1,8 +1,11 @@
 {
+  "name": "romajip",
+  "version": "0.1",
+  "description": "A translator that converts Japanese into English characters",
   "type": "module",
   "scripts": {
-    "dev": "rollup -cw",
-    "build": "rollup -c",
+    "dev": "rollup --config rollup.config.ts --configPlugin typescript --watch",
+    "build": "rollup --config rollup.config.ts --configPlugin typescript",
     "main": "./dist/bundle.js"
   },
   "devDependencies": {
@@ -10,5 +13,6 @@
     "rollup": "^3.18.0",
     "tslib": "^2.5.0",
     "typescript": "^4.9.5"
-  }
+  },
+  "license": "MIT"
 }
