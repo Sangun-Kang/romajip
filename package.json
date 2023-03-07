@@ -1,4 +1,10 @@
 {
+  "type": "module",
+  "scripts": {
+    "dev": "rollup -cw",
+    "build": "rollup -c",
+    "main": "./dist/bundle.js"
+  },
   "devDependencies": {
     "rollup": "^3.18.0"
   }
