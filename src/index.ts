@@ -1,3 +1,2 @@
-export const log = () => {
-    console.log("hello")
-}
+export * from "./romajip"
+import "./main.js"
