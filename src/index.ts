@@ -1,2 +1,1 @@
-export * from "./romajip"
-import "./main.js"
+export * as romajip from "./romajip"
