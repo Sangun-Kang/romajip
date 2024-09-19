@@ -1,6 +1,6 @@
 {
   "name": "romajip",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "A translator that converts Japanese into English characters",
   "main": "dist/romajip.cjs.js",
   "module": "dist/romajip.es.js",
