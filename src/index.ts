@@ -1,1 +1,7 @@
-export * as romajip from "./romajip"
+export {
+  findPrefecture,
+  findCity,
+  findCounty,
+  findWard,
+  findFullRomanizedAddress,
+} from "./romajip"
