@@ -1,2 +1,10 @@
-src
-.vscode
+src/
+.vscode/
+.idea/
+.vite/
+node_modules/
+rollup.config.js
+tsconfig.json
+package-lock.json
+yarn.lock
+.gitignore

@@ -1,13 +1,15 @@
 {
   "compilerOptions": {
-    "target": "es6",
-    "module": "commonjs",
-    "lib": ["es5", "es6", "dom"],
-    "strict": true,
+    "target": "ES6",
+    "module": "ESNext",
     "declaration": true,
+    "outDir": "./dist",
+    "strict": true,
+    "moduleResolution": "Node",
     "esModuleInterop": true,
-    "resolveJsonModule": true,
-    "outDir": "./dist"
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "resolveJsonModule": true
   },
   "include": ["src/**/*"]
 }
