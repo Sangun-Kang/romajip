@@ -10,7 +10,7 @@ This is a library that converts Japanese text input into English letters
 ## Features
 
 - **Accurate Conversion**: Transforms Japanese addresses into structured English components.
-- **Lightweight**: Optimized data handling keeps the library size minimal.
+- **No Fetch Required**: The library includes its own dataset, eliminating the need for fetching data and keeping the library size minimal.
 - **TypeScript Support**: Built with TypeScript for type safety and better developer experience.
 - **No External Dependencies**: Includes all necessary data within the library, avoiding additional dependencies.
 - **Functional Programming Paradigm**: Utilizes modern ES6 features and functional programming for clean and maintainable code.
