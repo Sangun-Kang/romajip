@@ -1,10 +1,8 @@
 <p align="center">
-  <a href="https://rotion.linyo.ws">
-    <picture><br><br><br>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/linyows/rotion/blob/main/img/romajip.svg?raw=true">
-      <img alt="Rotion" src="https://github.com/linyows/rotion/blob/main/misc/rotion.svg?raw=true" width="300">
-    </picture><br><br><br>
-  </a>
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/Sangun-Kang/romajip/blob/main/img/romajip.svg?raw=true">
+      <img alt="romajip" src="https://github.com/Sangun-Kang/romajip/blob/main/img/romajip.svg?raw=true" width="300">
+    </picture
 </p>
 
 This is a library that converts Japanese text input into English letters
