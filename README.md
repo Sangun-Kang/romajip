@@ -29,16 +29,16 @@ yarn add romajip
 
 ## Usage
 
-Import the convertAddress function and use it to convert Japanese addresses to their English equivalents.
+Import the romajip function and use it to convert Japanese addresses to their English equivalents.
 
 ## Basic Example
 
 ```typescript
-import { convertAddress } from "romajip"
+import { romajip } from "romajip"
 
 const japaneseAddress = "北海道札幌市中央区北一条西3丁目1-1"
 
-const parsed = convertAddress(japaneseAddress)
+const parsed = romajip(japaneseAddress)
 
 if (parsed) {
   console.log(parsed)
