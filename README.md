@@ -5,7 +5,7 @@
     </picture
 </p>
 
-This is a library that converts Japanese text input into English letters
+This is a library that converts Japanese address input into English address
 
 ## Features
 
