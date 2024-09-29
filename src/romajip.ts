@@ -22,7 +22,7 @@ const getAddressData = (): AddressData => {
 const extractOther = (
   address: string
 ): { other: string; remaining: string } => {
-  const regex = /(\d+丁目\d+-\d+)$/
+  const regex = /(\d+丁目(?:\d+-)*\d+)$/
   const match = address.match(regex)
   if (match) {
     return { other: match[1], remaining: address.replace(regex, "") }
