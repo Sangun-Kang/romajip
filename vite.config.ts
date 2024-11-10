@@ -5,16 +5,34 @@ export default defineConfig({
   build: {
     lib: {
       entry: "src/index.ts",
-      name: "Romajip",
-      fileName: (format) => `romajip.${format}.js`,
-      formats: ["es", "cjs", "umd"],
+      fileName: "romajip",
+      formats: ["es"],
     },
+    minify: true,
+    target: "esnext",
+    sourcemap: false,
+    reportCompressedSize: false,
+    cssCodeSplit: false,
     rollupOptions: {
-      external: [],
+      treeshake: {
+        moduleSideEffects: false,
+        propertyReadSideEffects: false,
+      },
       output: {
-        globals: {},
+        inlineDynamicImports: true,
+        preserveModules: false,
       },
     },
   },
-  plugins: [dts()],
+  plugins: [
+    dts({
+      rollupTypes: true,
+      include: ["src"],
+      exclude: ["**/*.test.ts", "**/*.spec.ts"],
+    }),
+  ],
+  optimize: {
+    exclude: [],
+    include: [/\.ts$/],
+  },
 })

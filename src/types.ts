@@ -1,24 +1,16 @@
+export interface AddressNode {
+  r: string // romaji
+  c?: {
+    // children (optional)
+    [key: string]: AddressNode
+  }
+}
+
 export interface AddressData {
-  [prefecture: string]: Prefecture
-}
-
-export interface Prefecture {
-  v: string
-  [city: string]: City | string
-}
-
-export interface City {
-  v: string
-  [ward: string]: string
+  [key: string]: AddressNode
 }
 
 export interface ParsedAddress {
-  pref: string
-  city: string
-  ward: string
-  other: string
-  pref_roma: string
-  city_roma: string
-  ward_roma: string
-  other_roma: string
+  japanese: string[]
+  romaji: string[]
 }

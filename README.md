@@ -36,7 +36,7 @@ Import the romajip function and use it to convert Japanese addresses to their En
 ```typescript
 import { romajip } from "romajip"
 
-const japaneseAddress = "北海道札幌市中央区北一条西3丁目1-1"
+const japaneseAddress = "東京都渋谷区神南1丁目23-1"
 
 const parsed = romajip(japaneseAddress)
 
@@ -45,14 +45,8 @@ if (parsed) {
   /*
     Output:
     {
-      pref: '北海道',
-      city: '札幌市中央区',
-      ward: '北一条西',
-      other: '3丁目1-1',
-      pref_roma: 'Hokkaido',
-      city_roma: 'Sapporo-shi Chuo-ku',
-      ward_roma: 'Kita1joNishi',
-      other_roma: '3-1-1',
+      japanese: [ '東京都', '渋谷区', '神南', '1丁目23-1' ],
+      romaji: [ 'tokyo', 'shibuya-ku', 'jinnan', '1-chome23-1' ]
     }
   */
 } else {

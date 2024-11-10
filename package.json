@@ -2,23 +2,21 @@
   "name": "romajip",
   "version": "0.0.5",
   "description": "A translator that converts Japanese into English characters",
-  "main": "dist/romajip.cjs.js",
-  "module": "dist/romajip.es.js",
-  "types": "dist/index.d.ts",
+  "type": "module",
+  "main": "./dist/romajip.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "require": "./dist/romajip.cjs.js",
-      "import": "./dist/romajip.es.js",
+      "import": "./dist/romajip.js",
       "types": "./dist/index.d.ts"
     }
   },
-  "unpkg": "dist/romajip.umd.js",
-  "jsdelivr": "dist/romajip.umd.js",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "vite build"
+    "build": "vite build",
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "typescript": "^5.6.2",
@@ -29,5 +27,12 @@
     "name": "Sangun Kang",
     "email": "sangun950@gmail.com"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.16"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sangun-Kang/romajip.git"
+  }
 }
