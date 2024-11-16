@@ -63,8 +63,8 @@ const formatNumber = (number: string): string => {
 
   // 번지/번호 처리
   result = result
-    .replace(/(\d+(?:-\d+)*)番地?/, "$1-ban")
-    .replace(/(\d+(?:-\d+)*)号/, "$1-go")
+    .replace(/(\d+(?:-\d+)*)番地?/, "$1ban")
+    .replace(/(\d+(?:-\d+)*)号/, "$1go")
 
   return result
 }
