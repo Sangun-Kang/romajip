@@ -58,7 +58,7 @@ const formatNumber = (number: string): string => {
   // 丁目 처리
   const chomeMatch = result.match(/(\d+)丁目/)
   if (chomeMatch) {
-    result = result.replace(/(\d+)丁目/, `${chomeMatch[1]}-chome`)
+    result = result.replace(/(\d+)丁目/, `${chomeMatch[1]}chome`)
   }
 
   // 번지/번호 처리
